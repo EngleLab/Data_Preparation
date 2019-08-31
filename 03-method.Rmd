@@ -1,0 +1,34 @@
+# Export
+
+----
+
+The Four Data Preparation Steps
+
+1. **Organize the raw data files**. This involves moving the raw *.edat* files from *Tasks/Session #/#. Task/data* to *Data Files/edat/Task/*.
+
+2. **Merge** the individual *.edat* files into a single **task.emrg** file using *E-Merge*
+
+3. **Export** the **task.emrg** file to a **task.txt** file so we can process the data in **R**
+
+4. **Source** the **0_task_raw.R** *Scripts* 
+
+----
+
+The third step in the data preparation stage is to **Export** the **.emrg** to a **.txt** file so it can be imported into R. 
+
+This step is real easy:
+
+1. Open an E-Merged data file in **Data Files/<span style="color: IndianRed">E-Merge</span>**
+
+2. Go to File **<span style="color: IndianRed"> -> </span>** Export...
+
+3. Change the following options
+
+    **Unicode**: Uncheck
+    
+4. Select **Okay**
+
+5. Save to the same location as the E-Merged data file: **Data Files/<span style="color: IndianRed">E-Merge</span>**
+
+6. Save with the same filename as the E-Merge file
+

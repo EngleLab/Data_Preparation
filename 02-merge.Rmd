@@ -1,0 +1,53 @@
+# Merge
+
+----
+
+The Four Data Preparation Steps
+
+1. **Organize the raw data files**. This involves moving the raw *.edat* files from *Tasks/Session #/#. Task/data* to *Data Files/edat/Task/*.
+
+2. **Merge** the individual *.edat* files into a single **task.emrg** file using *E-Merge*
+
+3. **Export** the **task.emrg** file to a **task.txt** file so we can process the data in **R**
+
+4. **Source** the **0_task_raw.R** *Scripts* 
+
+----
+
+E-Prime will create an **.edat** data file for each subject per task. This results in a lot of separate individual files. We need to merge these files together so that we have **one merged file per task**. We can use the **E-Merge** software program to do so.
+
+The second step in data preparation is to merge the individual **.edat** files into a single **.emrg** file.
+
+The **.edat** data files are located in the directory: **Data Files/edat/<span style="color: IndianRed">[Task Name]</span>**
+
+You need to save the merged data files in the directory: **Data Files/<span style="color: IndianRed">E-Merge</span>**
+
+----
+
+1. In the left window pane, navigate to the directory in Dropbox: **Data Files/edat/<span style="color: IndianRed">[Task Name]</span>** 
+
+2. Click on the **<span style="color: IndianRed">[Task Name]</span>** folder. This should populate the right window pane with **.edat** files
+
+3. Select all the files (Hold down the SHIFT key to highlight over multiple files)
+
+4. Click on **Merge** in the toolbar above
+
+5. Select **Standard Merge
+
+6. Save the new merged data file to **Data Files/<span style="color: IndianRed">E-Merge</span>** with the same name as the **<span style="color: IndianRed">[Task Name]</span>** folder
+
+7. It will ask you if you are sure you want to create this new file. Select **Yes**
+
+8. Get a Graduate Student or PostDoc if an **error** message occurs'
+
+9. Move on to the next **<span style="color: IndianRed">[Task Name]</span>** folder
+
+    - The directory tree in the left window pane may have disappeared. To make it reappear, adjust the horizontal size of the window panes by moving your mouse cursor to the divider between the left and right window panes.
+
+
+
+
+
+
+
+

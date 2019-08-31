@@ -1,0 +1,27 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">EngleLab Data Preparation</a></li>
+      after: |
+        <li><a href="https://englelab.gatech.edu/labuser" target="blank">Lab User</a></li>
+    toolbar:
+      position: fixed
+    edit : null
+    download: null
+    search: yes
+    fontsettings:
+      theme: white
+      family: sans
+      size: 2
+    sharing:
+      facebook: no
+      twitter: no
+      google: no
+      linkedin: no
+      weibo: no
+      instapper: no
+      vk: no
+      github: yes
+      all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper', 'github']
