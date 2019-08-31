@@ -36,6 +36,6 @@ For both of these scenarios, there are **4 data preparation steps:**
 
 After performing the 4 data preparation steps you will have *tidy* raw data files for each task saved as **task_raw.csv** in the *Data Files* folder. It is these files that you can then copy over to a *Data Analysis* repository.
 
-To understand more about Project Organization and the different types of repositories, see [**Chapter 7**](http://englelab.gatech.edu/userguide/project-organization.html) in the **UseR Guide**.
+To understand more about Project Organization and the different types of repositories, see [**Chapter 7**](http://englelab.gatech.edu/userguide/project-organization.html){target="_blank"} in the **UseR Guide**.
 
 

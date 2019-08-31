@@ -32,7 +32,7 @@ You need to save the merged data files in the directory: **Data Files/<span styl
 
 4. Click on **Merge** in the toolbar above
 
-5. Select **Standard Merge
+5. Select **Standard Merge**
 
 6. Save the new merged data file to **Data Files/<span style="color: IndianRed">E-Merge</span>** with the same name as the **<span style="color: IndianRed">[Task Name]</span>** folder
 

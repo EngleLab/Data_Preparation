@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EngleLab: Data Preparation</title>
+  <meta name="description" content="This is a useR Guide for the EngleLab">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="EngleLab: Data Preparation" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a useR Guide for the EngleLab" />
+  <meta name="github-repo" content="EngleLab" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="EngleLab: Data Preparation" />
+  
+  <meta name="twitter:description" content="This is a useR Guide for the EngleLab" />
+  
+
+<meta name="author" content="Jason Tsukahara">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="export.html">
+<link rel="next" href="pupil-data.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">EngleLab Data Preparation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="organize-raw-files.html"><a href="organize-raw-files.html"><i class="fa fa-check"></i><b>1</b> Organize Raw Files</a><ul>
+<li class="chapter" data-level="1.1" data-path="organize-raw-files.html"><a href="organize-raw-files.html#before-finishing-data-collection"><i class="fa fa-check"></i><b>1.1</b> Before Finishing Data Collection</a></li>
+<li class="chapter" data-level="1.2" data-path="organize-raw-files.html"><a href="organize-raw-files.html#after-data-collection"><i class="fa fa-check"></i><b>1.2</b> After Data Collection</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="merge.html"><a href="merge.html"><i class="fa fa-check"></i><b>2</b> Merge</a></li>
+<li class="chapter" data-level="3" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>3</b> Export</a></li>
+<li class="chapter" data-level="4" data-path="source-r-scripts.html"><a href="source-r-scripts.html"><i class="fa fa-check"></i><b>4</b> Source R Scripts</a><ul>
+<li class="chapter" data-level="4.1" data-path="source-r-scripts.html"><a href="source-r-scripts.html#creating-r-scripts"><i class="fa fa-check"></i><b>4.1</b> Creating R Scripts</a></li>
+<li class="chapter" data-level="4.2" data-path="source-r-scripts.html"><a href="source-r-scripts.html#using-the-masterscript.r"><i class="fa fa-check"></i><b>4.2</b> Using the masterscript.R</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a><ul>
+<li class="chapter" data-level="5.1" data-path="pupil-data.html"><a href="pupil-data.html#using-begaze"><i class="fa fa-check"></i><b>5.1</b> Using BeGaze</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://englelab.gatech.edu/labuser" target="blank">Lab User</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EngleLab: Data Preparation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="source-r-scripts" class="section level1">
+<h1><span class="header-section-number">4</span> Source R Scripts</h1>
+<hr />
+<p>The Four Data Preparation Steps</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Organize the raw data files</strong>. This involves moving the raw <em>.edat</em> files from <em>Tasks/Session #/#. Task/data</em> to <em>Data Files/edat/Task/</em>.</p></li>
+<li><p><strong>Merge</strong> the individual <em>.edat</em> files into a single <strong>task.emrg</strong> file using <em>E-Merge</em></p></li>
+<li><p><strong>Export</strong> the <strong>task.emrg</strong> file to a <strong>task.txt</strong> file so we can process the data in <strong>R</strong></p></li>
+<li><p><strong>Source</strong> the <strong>0_task_raw.R</strong> <em>Scripts</em></p></li>
+</ol>
+<hr />
+<p>The final data preparation step is to <strong>Source</strong> the <strong>0_task_raw.R</strong> scripts. These scripts convert the messy <strong>task.txt</strong> files to tidy <strong>task_raw.csv</strong> files.</p>
+<div id="creating-r-scripts" class="section level2">
+<h2><span class="header-section-number">4.1</span> Creating R Scripts</h2>
+<p>There should be a template R Script in the directory <strong>R Scripts/templates</strong>. If not you can download a template by typing into the console:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">workflow<span class="op">::</span><span class="kw">template</span>(<span class="dt">rawscript =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<p>To understand more about this template R Script see <a href="http://englelab.gatech.edu/userguide/r-script-templates.html#messy-to-tidy-script" target="_blank"><strong>Chapter 9.2.1</strong></a> in the <strong>UseR Guide</strong>.</p>
+<p>To learn how to create an R Script for this step see the <a href="http://englelab.gatech.edu/userguide/data-preparation-overview.html" target="_blank"><strong>Data Preparation</strong></a> section of the <strong>UseR Guide</strong>.</p>
+</div>
+<div id="using-the-masterscript.r" class="section level2">
+<h2><span class="header-section-number">4.2</span> Using the masterscript.R</h2>
+<p>It may be the case that ALL the R Scripts have been created and all you need to do is <code>source()</code> them all.</p>
+<p>You can do this easily in the file <strong>masterscript.R</strong></p>
+<p>If there is not a mastersrcipt file then you can download one by typing into the console:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">workflow<span class="op">::</span><span class="kw">template</span>(<span class="dt">masterscript =</span> <span class="st">&quot;data preparation&quot;</span>)</a></code></pre></div>
+<p>To understand more about the masterscript see <a href="http://englelab.gatech.edu/userguide/r-script-templates.html#masterscript-data-preparation" target="_blank"><strong>Chapter 9.2.2</strong></a> in the <strong>UseR Guide</strong></p>
+<p>The masterscript for data preparation is simple and looks something like:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="co">## Data Preparation for StudyName</span></a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="co">#############################################</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="co">#------ 0. &quot;messy&quot; to &quot;tidy&quot; raw data ------#</span></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="co">#############################################</span></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="kw">library</span>(here)</a>
+<a class="sourceLine" id="cb7-8" title="8"></a>
+<a class="sourceLine" id="cb7-9" title="9"><span class="kw">source</span>(<span class="kw">here</span>(<span class="st">&quot;R Scripts&quot;</span>, <span class="st">&quot;0_taskname_raw.R&quot;</span>), <span class="dt">echo=</span><span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb7-10" title="10"></a>
+<a class="sourceLine" id="cb7-11" title="11"><span class="kw">rm</span>(<span class="dt">list=</span><span class="kw">ls</span>())</a>
+<a class="sourceLine" id="cb7-12" title="12"><span class="co">#############################################</span></a></code></pre></div>
+<p>For each task there should be an R Script file - <strong>0_taskname_raw.R</strong></p>
+<p>For each of these R Script files there should be a line in the masterscript to <code>source()</code> that file.</p>
+<p><em>Note: <code>source()</code> or Sourcing means to execute all lines of code in a file.</em></p>
+<p>In the masterscript we are using the <code>here()</code> function. To learn more about the <code>here()</code> function see <a href="http://englelab.gatech.edu/userguide/reproducible-practices.html#working-directory" target="_blank"><strong>Chapter 8.3.1</strong></a> in the <strong>UseR Guide</strong>.</p>
+<p>If there is not a line in the masterscript to <code>source()</code> an R Script file then you should most likely add it.</p>
+<p>Finally, you can run each line of code in the masterscript, one at a time. Running them run at a time makes it easier to catch any errors that might come up.</p>
+<p>Start at the first line of code: <code>library(here)</code> and press Ctrl+Enter</p>
+<p>Wait for that line of code to finish running, then press Ctrl+Enter (The cursor should have automatically moved to the next line).</p>
+<p>If there were any errors you can feel free to try and troubleshoot. Otherwise get a graduate student or PostDoc to help out.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="export.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pupil-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper", "github"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+</body>
+
+</html>

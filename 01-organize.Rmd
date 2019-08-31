@@ -24,7 +24,9 @@ To perform this first step, you can use the `copy_raw()` function from the `work
 
 2. Use `workflow::copy_raw()`
 
-    The arguments you can specify for this function are:
+    You can just copy and paste from the examples below.
+
+    But for your information, the arguments you can specify for this function are:
     
     - __from__: a directory where the task folders for a single session are located (e.g. **"Tasks/Session 1"**)
     

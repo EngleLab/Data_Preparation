@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EngleLab: Data Preparation</title>
+  <meta name="description" content="This is a useR Guide for the EngleLab">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="EngleLab: Data Preparation" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a useR Guide for the EngleLab" />
+  <meta name="github-repo" content="EngleLab" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="EngleLab: Data Preparation" />
+  
+  <meta name="twitter:description" content="This is a useR Guide for the EngleLab" />
+  
+
+<meta name="author" content="Jason Tsukahara">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="source-r-scripts.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">EngleLab Data Preparation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="organize-raw-files.html"><a href="organize-raw-files.html"><i class="fa fa-check"></i><b>1</b> Organize Raw Files</a><ul>
+<li class="chapter" data-level="1.1" data-path="organize-raw-files.html"><a href="organize-raw-files.html#before-finishing-data-collection"><i class="fa fa-check"></i><b>1.1</b> Before Finishing Data Collection</a></li>
+<li class="chapter" data-level="1.2" data-path="organize-raw-files.html"><a href="organize-raw-files.html#after-data-collection"><i class="fa fa-check"></i><b>1.2</b> After Data Collection</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="merge.html"><a href="merge.html"><i class="fa fa-check"></i><b>2</b> Merge</a></li>
+<li class="chapter" data-level="3" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>3</b> Export</a></li>
+<li class="chapter" data-level="4" data-path="source-r-scripts.html"><a href="source-r-scripts.html"><i class="fa fa-check"></i><b>4</b> Source R Scripts</a><ul>
+<li class="chapter" data-level="4.1" data-path="source-r-scripts.html"><a href="source-r-scripts.html#creating-r-scripts"><i class="fa fa-check"></i><b>4.1</b> Creating R Scripts</a></li>
+<li class="chapter" data-level="4.2" data-path="source-r-scripts.html"><a href="source-r-scripts.html#using-the-masterscript.r"><i class="fa fa-check"></i><b>4.2</b> Using the masterscript.R</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a><ul>
+<li class="chapter" data-level="5.1" data-path="pupil-data.html"><a href="pupil-data.html#using-begaze"><i class="fa fa-check"></i><b>5.1</b> Using BeGaze</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://englelab.gatech.edu/labuser" target="blank">Lab User</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EngleLab: Data Preparation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pupil-data" class="section level1">
+<h1><span class="header-section-number">5</span> Pupil Data</h1>
+<p>There are a few extra <strong>Data Preparation</strong> steps required for pupil data. After completing Step 1 of data preparation follow these instructions. These instructions replace Steps 2 and 3.</p>
+<p>The eyetracker will create several data files that we need to import into BeGaze analysis software and export as a .txt file. The following data files are created by the eyetracker</p>
+<ul>
+<li><p><strong>.idf</strong> - this file contains the actual gaze and pupil data</p></li>
+<li><p><strong>AccuracyImage.bmp</strong> - An image file</p></li>
+<li><p><strong>TrackingMonitorImage.bmp</strong> - An image file</p></li>
+<li><p><strong>.idf_images</strong> - These files will look like folders. <em>We do not need to import these files</em></p></li>
+</ul>
+<p>These files are located in the directory: <strong>Data Files/Eye-Tracking/[Task Name]/<span style="color: IndianRed">idf</span></strong></p>
+<p>We will export the raw sample.txt files to: <strong>Data Files/Eye-Tracking/<span style="color: IndianRed">[Task Name]</span></strong></p>
+<div id="using-begaze" class="section level2">
+<h2><span class="header-section-number">5.1</span> Using BeGaze</h2>
+<ol style="list-style-type: decimal">
+<li><p>Open data files in BeGaze</p>
+<ul>
+<li><p>File <strong><span style="color: IndianRed"> -&gt; </span></strong> Manual Experiment Creation</p></li>
+<li><p>Experiment Name: <strong>PupilData</strong></p></li>
+<li><p>Go to the <strong>Gaze Data</strong> tab:</p>
+<ul>
+<li><p>Add files… <strong><span style="color: IndianRed"> -&gt; </span></strong> Sort by Data <strong><span style="color: IndianRed"> -&gt; </span></strong> select the <strong><span style="color: IndianRed"> .idf files </span></strong> you want (not .idf_images) <strong><span style="color: IndianRed"> -&gt; </span></strong> Open</p></li>
+<li><p>Check if any subject files have a different recording frequency (Hz) or different calibration screen resolution (e.g. [860,720])</p></li>
+</ul>
+<p>-Select those subject files and click “Remove Files”</p>
+<ul>
+<li><p>On the computer in the <strong>idf</strong> folder, move all the files associated with those subjects to a “recording error” folder: <strong>Data Files/Eye-Tracking/[Task Name]/idf/<span style="color: IndianRed">recording error</span></strong></p></li>
+<li><p>Check that all subjects have the same recording frequency (Hz) and calibration screen resolution.</p></li>
+</ul></li>
+<li><p>Go to <strong>Stimulus Images</strong> tab:</p>
+<ul>
+<li>Add Files… <strong><span style="color: IndianRed"> -&gt; </span></strong> Sort by Date <strong><span style="color: IndianRed"> -&gt; </span></strong> select the <strong><span style="color: IndianRed"> AccuracyImage.bmp </span></strong> and <strong><span style="color: IndianRed"> TrackingMonitorIMage.bmp </span></strong> files you want (not .idf_images)</li>
+</ul></li>
+<li><p>Go to <strong>Event Detection</strong> tab:</p>
+<ul>
+<li><p>Set Event Detection to: <strong>High Speed</strong></p></li>
+<li><p>Set the following parameters:</p>
+<ul>
+<li><p>22</p></li>
+<li><p>40%</p></li>
+<li><p>50 ms</p></li>
+<li><p>20%</p></li>
+<li><p>80%</p></li>
+</ul></li>
+</ul></li>
+<li><p>Select <strong>Create Experiment</strong></p></li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Convert .idf files to .txt files</p>
+<ul>
+<li><p>Export <strong><span style="color: IndianRed"> -&gt; </span></strong> Legacy: Export Raw Data to File…</p></li>
+<li><p>The following fields should be selected (Fields with an <strong>*</strong> are the most important)</p>
+<p><strong>Raw Data</strong>:</p>
+<ul>
+<li><p>Pupil Diameter</p></li>
+<li><p>Pupil Diameter [mm] <strong>*</strong></p></li>
+</ul>
+<p><strong>Channel</strong>:</p>
+<ul>
+<li><p>Left Eye <strong>*</strong></p></li>
+<li><p>Right Eye <strong>*</strong></p></li>
+</ul>
+<p><strong>Points of Regard (POR)</strong>:</p>
+<ul>
+<li><p>Gaze Position <strong>*</strong></p></li>
+<li><p>Quality Values</p></li>
+<li><p>Eye Position</p></li>
+<li><p>Gaze Vector</p></li>
+</ul>
+<p><strong>Misc. Data</strong>:</p>
+<ul>
+<li><p>Messages <strong>*</strong></p></li>
+<li><p>Event Info <strong>*</strong></p></li>
+<li><p>Stimulus</p></li>
+<li><p>Stimulus Conditions</p></li>
+</ul></li>
+<li><p>Select <strong>Details</strong> tab</p>
+<ul>
+<li><p>Select <strong>Write header</strong></p></li>
+<li><p>Decimal places: <strong>4</strong></p></li>
+<li><p>Separator: <strong>Tab</strong></p></li>
+<li><p>Export Location: <strong><span style="color: IndianRed"> NEEDS TO BE SPECIFIED!! </span></strong></p>
+<ul>
+<li>Browse: <strong>Data Files/Eye-Tracking/<span style="color: IndianRed">[Task Name]</span></strong></li>
+</ul></li>
+<li><p>Select <strong>Single file output</strong></p></li>
+</ul></li>
+<li><p>Select <strong>Export</strong></p></li>
+<li><p>Go to File <strong><span style="color: IndianRed"> -&gt; </span></strong> <strong>Close Experiment</strong></p></li>
+<li><p>Got to File <strong><span style="color: IndianRed"> -&gt; </span></strong> <strong>Delete Experiment from Data Base</strong></p></li>
+<li><p><strong>Delete</strong> PupilData Experiment</p></li>
+</ul></li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="source-r-scripts.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper", "github"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+</body>
+
+</html>
