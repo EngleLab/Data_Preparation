@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>EngleLab: Data Preparation</title>
+  <title>2 Merge | EngleLab: Data Preparation</title>
   <meta name="description" content="This is a useR Guide for the EngleLab">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="EngleLab: Data Preparation" />
+  <meta property="og:title" content="2 Merge | EngleLab: Data Preparation" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="EngleLab" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="EngleLab: Data Preparation" />
+  <meta name="twitter:title" content="2 Merge | EngleLab: Data Preparation" />
   
   <meta name="twitter:description" content="This is a useR Guide for the EngleLab" />
   
@@ -35,6 +35,7 @@
 <link rel="next" href="export.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -66,7 +67,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -130,14 +131,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
 <li class="chapter" data-level="1" data-path="organize-raw-files.html"><a href="organize-raw-files.html"><i class="fa fa-check"></i><b>1</b> Organize Raw Files</a><ul>
-<li class="chapter" data-level="1.1" data-path="organize-raw-files.html"><a href="organize-raw-files.html#before-finishing-data-collection"><i class="fa fa-check"></i><b>1.1</b> Before Finishing Data Collection</a></li>
-<li class="chapter" data-level="1.2" data-path="organize-raw-files.html"><a href="organize-raw-files.html#after-data-collection"><i class="fa fa-check"></i><b>1.2</b> After Data Collection</a></li>
+<li class="chapter" data-level="1.1" data-path="organize-raw-files.html"><a href="organize-raw-files.html#steps-before-finishing-data-collection"><i class="fa fa-check"></i><b>1.1</b> Steps: Before Finishing Data Collection</a></li>
+<li class="chapter" data-level="1.2" data-path="organize-raw-files.html"><a href="organize-raw-files.html#steps-after-data-collection-has-finished"><i class="fa fa-check"></i><b>1.2</b> Steps: After Data Collection Has Finished</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="merge.html"><a href="merge.html"><i class="fa fa-check"></i><b>2</b> Merge</a></li>
 <li class="chapter" data-level="3" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>3</b> Export</a></li>
 <li class="chapter" data-level="4" data-path="source-r-scripts.html"><a href="source-r-scripts.html"><i class="fa fa-check"></i><b>4</b> Source R Scripts</a><ul>
-<li class="chapter" data-level="4.1" data-path="source-r-scripts.html"><a href="source-r-scripts.html#creating-r-scripts"><i class="fa fa-check"></i><b>4.1</b> Creating R Scripts</a></li>
-<li class="chapter" data-level="4.2" data-path="source-r-scripts.html"><a href="source-r-scripts.html#using-the-masterscript.r"><i class="fa fa-check"></i><b>4.2</b> Using the masterscript.R</a></li>
+<li class="chapter" data-level="4.1" data-path="source-r-scripts.html"><a href="source-r-scripts.html#steps"><i class="fa fa-check"></i><b>4.1</b> Steps</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a><ul>
 <li class="chapter" data-level="5.1" data-path="pupil-data.html"><a href="pupil-data.html#using-begaze"><i class="fa fa-check"></i><b>5.1</b> Using BeGaze</a></li>
@@ -179,14 +179,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You need to save the merged data files in the directory: <strong>Data Files/<span style="color: IndianRed">E-Merge</span></strong></p>
 <hr />
 <ol style="list-style-type: decimal">
-<li><p>In the left window pane, navigate to the directory in Dropbox: <strong>Data Files/edat/<span style="color: IndianRed">[Task Name]</span></strong></p></li>
+<li><p>Open E-Merge 3.0 by clicking on the icon in the taskbar.</p></li>
+<li><p>In the left window pane, navigate to the directory:</p>
+<p><strong>Dropbox (GaTech) / EngleLab / Studies / [StudyName] / Data Files / edat</strong></p></li>
 <li><p>Click on the <strong><span style="color: IndianRed">[Task Name]</span></strong> folder. This should populate the right window pane with <strong>.edat</strong> files</p></li>
 <li><p>Select all the files (Hold down the SHIFT key to highlight over multiple files)</p></li>
 <li><p>Click on <strong>Merge</strong> in the toolbar above</p></li>
 <li><p>Select <strong>Standard Merge</strong></p></li>
-<li><p>Save the new merged data file to <strong>Data Files/<span style="color: IndianRed">E-Merge</span></strong> with the same name as the <strong><span style="color: IndianRed">[Task Name]</span></strong> folder</p></li>
+<li><p>Save the new merged data file to</p>
+<p><strong>Dropbox (GaTech) / EngleLab / Studies / [StudyName] / Data Files / <span style="color: IndianRed">Merged</span></strong></p>
+<p>with the same name as the <strong><span style="color: IndianRed">[Task Name]</span></strong> folder</p></li>
 <li><p>It will ask you if you are sure you want to create this new file. Select <strong>Yes</strong></p></li>
-<li><p>Get a Graduate Student or PostDoc if an <strong>error</strong> message occurs’</p></li>
+<li><p>Get a Graduate Student or PostDoc if an <strong>error</strong> message occurs</p></li>
 <li><p>Move on to the next <strong><span style="color: IndianRed">[Task Name]</span></strong> folder</p>
 <ul>
 <li>The directory tree in the left window pane may have disappeared. To make it reappear, adjust the horizontal size of the window panes by moving your mouse cursor to the divider between the left and right window panes.</li>
@@ -220,9 +224,10 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper", "github"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper", "github"],
+"instapper": false
 },
 "fontsettings": {
 "theme": "white",
@@ -230,6 +235,10 @@ gitbook.start({
 "size": 2
 },
 "edit": null,
+"history": {
+"link": null,
+"text": null
+},
 "download": null,
 "toc": {
 "collapse": "subsection"
