@@ -20,42 +20,26 @@ This document shows you how to perform step 1 using a convenient function in R (
 
 To perform this first step, you can use the `copy_raw()` function from the `workflow` package I developed.
 
-1. Open the research study's RProject file (**.Rproj**)
-
-2. Use `workflow::copy_raw()`
-
-    You can just copy and paste from the examples below.
-
-    But for your information, the arguments you can specify for this function are:
-    
-    - __from__: a directory where the task folders for a single session are located (e.g. **"Tasks/Session 1"**)
-    
-    - __to__: a directory where raw data files are to be copied to (e.g. **"Data Files/subj"**)
-    
-    - __filetype__: a string pattern identifying a specific type of raw data file (e.g. **".edat"**)
-    
-    - __remove__: An optional argument that takes TRUE/FALSE values. FALSE is equivalent to copy/paste and is the default. TRUE will delete the files after copying them (this would be done only after data collection)
-    
-    - __subj.file__: A file path to a list of subjects who completed the entire study (optional; and would only be specified after data collection; e.g. **"Data Files/subj_completed.csv"**)
-    
-    - __ext__: a directory extension within the **[Task Name]** folder to save raw data files to (this is mainly for eye-tracking data; e.g. **"idf"**)
-
-## Before Finishing Data Collection
+## Steps: Before Finishing Data Collection
 
 In situations where data collection has not finished, you do not need to worry about removing subjects that did not complete all sessions. And this organization is more temporary so we will want to just copy/paste the files, not remove them.
 
-To copy and paste the **.edat** files from a Session folder type into the console:
+1. Open the research study's RProject file (**.Rproj**) located at:
+
+    **Dropbox (GaTech) / EngleLab / Studies / [StudyName] / [StudyName].Rproj**
+
+    Do not open RStudio by clicking on the Program Application in the taskbar
+    
+2. Copy and Paste the line of code into the Console window
 
 ```{r eval = FALSE}
 workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/subj", 
                    filetype = ".edat")
 ```
 
-*Note that you should be able to just copy and paste this line of code directly into R.*
+3. Repeat Step 2 for each Session folder changing it from Session 1 to Session 2, etc.
 
-In order to copy and paste files from another Session folder, just replace **Session 1** with the name of another Session folder (e.g. **Session 2**)
-
-To copy and paste **Eye-Tracking** data files from a Session folder type into the console:
+4. If there is eye-tracking data copy and paste the three lines of code into the Console window
 
 ```{r eval = FALSE}
 workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking", 
@@ -68,16 +52,21 @@ workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking",
                    filetype = "TrackingMonitorImage", ext = "idf")
 ```
 
-These three lines of code copy over three types of **Eye-Tracking** files.
+5. Repeat Step 4 for each Sessin folder. Changing it from Session 1 to Session 2, etc.
 
+----
 
-## After Data Collection
+## Steps: After Data Collection Has Finished
+
+In situations where data collection has finished, you will need to separate files for subjects that did complete all Sessions and subjects that did not.
+
+1. We need to create a certain file before we use `workflow::copy_raw()`. This file only contains a column of **Subject #'s** that completed all sessions. I suggest creating this file based on the **Database** on the Control Room Computer. Put the Subject #'s in an Excel document and save it as a comma separated value file, **subjlist_final.csv** to **Data Files/**
+
+2. Open the research study's RProject file (**.Rproj**)
+
+    Do not open RStudio by clicking on the Program Application
     
-In situations where data collection has finished, you will need to separate files for subjects that did complete all Sessions and subjects that did not. We will also want to just perform a *Move* and not *Copy and Paste*. This is a tedious process if done manually. We can just use `workflow::copy_raw()` to do this for us.
-
-However, we do need to create a certain file before we can use `workflow::copy_raw()`. This file only contains a column of **Subject #'s** that completed all sessions. I suggest creating this file based on the **Database** on the Control Room Computer. Put the Subject #'s in an Excel document and save it as a comma separative value file, **subjlist_final.csv** to **Data Files/**
-
-Then type into the console:
+3. Copy and Paste the line of code into the Console window
 
 ```{r eval = FALSE}
 workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/subj", 
@@ -85,7 +74,9 @@ workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/subj",
                    subj.file = "Data Files/subjlist_final.csv")
 ```
 
-For **Eye-Tracking** files:
+4. Repeat Step 2 for each Session folder changing it from Session 1 to Session 2, etc.
+
+5. If there is eye-tracking data copy and paste the three lines of code into the Console window
 
 ```{r eval = FALSE}
 workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking", 
@@ -101,4 +92,5 @@ workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking",
                    subj.file = "Data Files/subjlist_final.csv")
 ```
 
+6. Repeat Step 4 for each Sessin folder. Changing it from Session 1 to Session 2, etc.
 

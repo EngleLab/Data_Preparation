@@ -18,7 +18,9 @@ The third step in the data preparation stage is to **Export** the **.emrg** to a
 
 This step is real easy:
 
-1. Open an E-Merged data file in **Data Files/<span style="color: IndianRed">E-Merge</span>**
+1. Open an E-Merged data file in 
+
+    **Dropbox (GaTech) / EngleLab / Studies / [StudyName] / Data Files / <span style="color: IndianRed">Merged</span>**
 
 2. Go to File **<span style="color: IndianRed"> -> </span>** Export...
 
@@ -28,7 +30,9 @@ This step is real easy:
     
 4. Select **Okay**
 
-5. Save to the same location as the E-Merged data file: **Data Files/<span style="color: IndianRed">E-Merge</span>**
+5. Save to the same location as the E-Merged data file: 
+
+    **Data Files/<span style="color: IndianRed">Merged</span>**
 
 6. Save with the same filename as the E-Merge file
 
