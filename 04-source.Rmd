@@ -28,7 +28,7 @@ The masterscript should be created already, if not then get a graduate student t
     
 2. Open the file **masterscript.R**
 
-    **Use the File Window pane in RStudio (in the bottom left corner to open script files)
+    **Use the File Window pane in RStudio (in the bottom right corner to open script files)**
     
 3. Run the lines of code in the masterscript that start with `source()` by clicking anywhere on the first line of code and press Ctrl+Enter
 
