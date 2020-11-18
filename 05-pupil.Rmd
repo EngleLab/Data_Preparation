@@ -12,32 +12,32 @@ The eyetracker will create several data files that we need to import into BeGaze
 
 - **.idf_images** - These files will look like folders. *We do not need to import these files*
 
-These files are located in the directory: **Data Files/Eye-Tracking/[Task Name]/<span style="color: IndianRed">idf</span>**
+These files are located in the directory: **Data Files/Eye-Tracking/[Task Name]/<span style="color: FireBrick">idf</span>**
 
-We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span style="color: IndianRed">[Task Name]</span>**
+We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span>**
 
 1. **Open** data files in BeGaze
 
-    - File **<span style="color: IndianRed"> -> </span>** Manual Experiment Creation
+    - File **<span style="color: FireBrick"> -> </span>** Manual Experiment Creation
     
     - Experiment Name: **PupilData**
     
     - Go to the **Gaze Data** tab:
     
-        - Add files… **<span style="color: IndianRed"> -> </span>** Sort by Data **<span style="color: IndianRed"> -> </span>** select the **<span style="color: IndianRed"> .idf files </span>** you want (not .idf_images) **<span style="color: IndianRed"> -> </span>** Open
+        - Add files… **<span style="color: FireBrick"> -> </span>** Sort by Data **<span style="color: FireBrick"> -> </span>** select the **<span style="color: FireBrick"> .idf files </span>** you want (not .idf_images) **<span style="color: FireBrick"> -> </span>** Open
         
         - Check if any subject files have a different recording frequency (Hz) or different calibration screen resolution (e.g. [860,720])
         
         -Select those subject files and click “Remove Files”
         
-        - On the computer in the **idf** folder, move all the files associated with those subjects to a “recording error” folder: **Data Files/Eye-Tracking/[Task Name]/idf/<span style="color: IndianRed">recording error</span>** 
+        - On the computer in the **idf** folder, move all the files associated with those subjects to a “recording error” folder: **Data Files/Eye-Tracking/[Task Name]/idf/<span style="color: FireBrick">recording error</span>** 
         
         - Check that all subjects have the same recording frequency (Hz) and calibration screen resolution.
 
 
     - Go to **Stimulus Images** tab:
     
-        - Add Files… **<span style="color: IndianRed"> -> </span>** Sort by Date **<span style="color: IndianRed"> -> </span>** select the **<span style="color: IndianRed"> AccuracyImage.bmp </span>** and **<span style="color: IndianRed"> TrackingMonitorIMage.bmp </span>** files you want (not .idf_images)
+        - Add Files… **<span style="color: FireBrick"> -> </span>** Sort by Date **<span style="color: FireBrick"> -> </span>** select the **<span style="color: FireBrick"> AccuracyImage.bmp </span>** and **<span style="color: FireBrick"> TrackingMonitorIMage.bmp </span>** files you want (not .idf_images)
 
 
     - Go to **Event Detection** tab:
@@ -62,7 +62,7 @@ We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span styl
     
 2. **Convert** .idf files to .txt files
 
-    - Export **<span style="color: IndianRed"> -> </span>** Legacy: Export Raw Data to File...
+    - Export **<span style="color: FireBrick"> -> </span>** Legacy: Export Raw Data to File...
     
     - The following fields should be selected (Fields with an __\*__ are the most important)
     
@@ -106,17 +106,17 @@ We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span styl
         
         - Separator: **Tab**
         
-        - Export Location:  **<span style="color: IndianRed"> NEEDS TO BE SPECIFIED!! </span>**
+        - Export Location:  **<span style="color: FireBrick"> NEEDS TO BE SPECIFIED!! </span>**
         
-            - Browse: **Data Files/Eye-Tracking/<span style="color: IndianRed">[Task Name]</span>**
+            - Browse: **Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span>**
             
         - Select **Single file output**
         
     - Select **Export**
     
-    - Go to File **<span style="color: IndianRed"> -> </span>** **Close Experiment**
+    - Go to File **<span style="color: FireBrick"> -> </span>** **Close Experiment**
     
-    - Got to File **<span style="color: IndianRed"> -> </span>** **Delete Experiment from Data Base**
+    - Got to File **<span style="color: FireBrick"> -> </span>** **Delete Experiment from Data Base**
     
     - **Delete** PupilData Experiment
     

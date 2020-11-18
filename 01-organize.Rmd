@@ -18,23 +18,11 @@ I have created R scripts that you can run on each running room computer to copy 
 
     There should be a shortcut to a Z: Drive folder on the Desktop. If you can open that shortcut then the Z Drive is connected. Otherwise it might prompt you to provide credentials. A Grad Student or Post-Doc will have to put in their GT username and password.
 
-3. **Open R**
+3. **Run** the R script. In the study folder on the Desktop there should be an R script file (copy_to_zdrive.R). Run the file by double-clicking on it. 
 
-4. In R, **open copy_raw.R** script file
-
-5. **Run all code** in copy_raw.R
-
-    Use CTRL+A to select all lines, then CTRL+R to run
-
-6. In R, **open copy_to_zdrive.R** script file
-
-7. **Run all code** in copy_to_zdrive.R
-
-    Use CTRL+A to select all lines, then CTRL+R to run
+    A command prompt window should open up and you should see the output of the script being printed. When the R script is finished running (it may take a while especially for eye-tracking data) the command prompt window will close.
     
-8. **Check** the output to see the number of files copied for each task
+4. **Unplug** the computer from the internet
 
-9. **Unplug** the computer from the **internet**
-
-10. **Repeat** steps 1 - 9 for each running room computer
+5. **Repeat** steps 1-4 for each running room computer.
 

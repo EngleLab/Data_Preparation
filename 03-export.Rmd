@@ -7,11 +7,11 @@ Before we can do so we will need to copy the E-Prime merged files from the Z: dr
 
 1. **Copy** all the E-Prime Merged data files over to SharePoint:
 
-    Georgia Institute of Technology / Engle Lab - Documents / Data Collection / [Study Name] / **Data Files / Raw Data / <span style="color: IndianRed">Merged</span>**
+    Georgia Institute of Technology / Engle Lab - Documents / Data Collection / [Study Name] / **Data Files / <span style="color: FireBrick">Merged</span>**
 
 2. **Open** an E-Merged data file
 
-3. Go to File **<span style="color: IndianRed"> -> </span>** Export...
+3. Go to File **<span style="color: FireBrick"> -> </span>** Export...
 
 4. Change the following options
 
@@ -21,7 +21,7 @@ Before we can do so we will need to copy the E-Prime merged files from the Z: dr
 
 6. **Save** with the same file name and location as the E-Merge file
 
-    **Data Files / <span style="color: IndianRed">Merged</span>**
+    **Data Files / <span style="color: FireBrick">Merged</span>**
     
     If there is already an exported .txt file for this task then overwrite it.
     

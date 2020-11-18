@@ -1,8 +1,8 @@
 # Tidy
 
-The final data preparation step is to **tidy** the raw data files by sourcing the **0_task_raw.R** scripts. These scripts convert the messy **task.txt** files to tidy **task_raw.csv** files. 
+The final data preparation step is to **tidy** the raw data files by sourcing the **task_raw.R** scripts. These scripts convert the messy **task.txt** files to tidy **task_raw.csv** files. 
 
-A masterscript for this step should be created already, if not then get a graduate student to help out (Jason Tsukahara)
+*A masterscript for this step should be created already, if not then get a graduate student to help out (Jason Tsukahara)*
 
 1. **Open** the research study's RProject file (**.Rproj**) located at:
 
@@ -12,7 +12,7 @@ A masterscript for this step should be created already, if not then get a gradua
     
 2. Open the file **masterscript.R**
 
-    *Use the File Window pane in RStudio (in the bottom right corner to open script files)*
+    *Use the File Window pane in RStudio (in the bottom right quadrant) to find the masterscript file*
     
 3. **Run** the lines of code in the masterscript that start with `source()` by clicking anywhere on the first line of code and press **Ctrl+Enter**
 
