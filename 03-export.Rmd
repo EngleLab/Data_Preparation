@@ -1,39 +1,30 @@
 # Export
 
-----
-
-The Four Data Preparation Steps
-
-1. **Organize the raw data files**. This involves moving the raw *.edat* files from *Tasks/Session #/#. Task/data* to *Data Files/edat/Task/*.
-
-2. **Merge** the individual *.edat* files into a single **task.emrg** file using *E-Merge*
-
-3. **Export** the **task.emrg** file to a **task.txt** file so we can process the data in **R**
-
-4. **Source** the **0_task_raw.R** *Scripts* 
-
-----
-
 The third step in the data preparation stage is to **Export** the **.emrg** to a **.txt** file so it can be imported into R. 
 
-This step is real easy:
+Before we can do so we will need to copy the E-Prime merged files from the Z: drive over to SharePoint. *This is only because exporting the files takes considerably longer on the Z: drive than SharePoint*.
 
-1. Open an E-Merged data file in 
 
-    **Dropbox (GaTech) / EngleLab / Studies / [StudyName] / Data Files / <span style="color: IndianRed">Merged</span>**
+1. **Copy** all the E-Prime Merged data files over to SharePoint:
 
-2. Go to File **<span style="color: IndianRed"> -> </span>** Export...
+    Georgia Institute of Technology / Engle Lab - Documents / Data Collection / [Study Name] / **Data Files / Raw Data / <span style="color: IndianRed">Merged</span>**
 
-3. Change the following options
+2. **Open** an E-Merged data file
+
+3. Go to File **<span style="color: IndianRed"> -> </span>** Export...
+
+4. Change the following options
 
     **Unicode**: Uncheck
     
-4. Select **Okay**
+5. Select **Okay**
 
-5. Save to the same location as the E-Merged data file: 
+6. **Save** with the same file name and location as the E-Merge file
 
-    **Data Files/<span style="color: IndianRed">Merged</span>**
-
-6. Save with the same filename as the E-Merge file
+    **Data Files / <span style="color: IndianRed">Merged</span>**
+    
+    If there is already an exported .txt file for this task then overwrite it.
+    
+7. **Repeat** steps 2 - 6 for each task
 
 

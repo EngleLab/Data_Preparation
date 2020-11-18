@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Export | EngleLab: Data Preparation</title>
+  <title>1 Organize | EngleLab: Data Preparation</title>
   <meta name="description" content="This is a useR Guide for the EngleLab" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Export | EngleLab: Data Preparation" />
+  <meta property="og:title" content="1 Organize | EngleLab: Data Preparation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="EngleLab" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Export | EngleLab: Data Preparation" />
+  <meta name="twitter:title" content="1 Organize | EngleLab: Data Preparation" />
   
   <meta name="twitter:description" content="This is a useR Guide for the EngleLab" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="merge.html"/>
-<link rel="next" href="tidy.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="merge.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -95,22 +95,28 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="export" class="section level1">
-<h1><span class="header-section-number">3</span> Export</h1>
-<p>The third step in the data preparation stage is to <strong>Export</strong> the <strong>.emrg</strong> to a <strong>.txt</strong> file so it can be imported into R.</p>
-<p>Before we can do so we will need to copy the E-Prime merged files from the Z: drive over to SharePoint. <em>This is only because exporting the files takes considerably longer on the Z: drive than SharePoint</em>.</p>
+<div id="organize" class="section level1">
+<h1><span class="header-section-number">1</span> Organize</h1>
+<p>The first step in data preparation is simply about organizing the raw data files so that we can more easily merge the data files using E-Merge.</p>
+<p>Initially the data files are stored on separate computers along with the task program and stimulus materials. For each task we need to grab only the data files from each computer and put them into a single folder for that task.</p>
+<p><strong>Because we have many tasks and computers, manually doing this can be quite tedious and error prone.</strong></p>
+<p>I have created R scripts that you can run on each running room computer to copy the data files for each task to the Z drive.</p>
+<hr />
 <ol style="list-style-type: decimal">
-<li><p><strong>Copy</strong> all the E-Prime Merged data files over to SharePoint:</p>
-<p>Georgia Institute of Technology / Engle Lab - Documents / Data Collection / [Study Name] / <strong>Data Files / Raw Data / <span style="color: IndianRed">Merged</span></strong></p></li>
-<li><p><strong>Open</strong> an E-Merged data file</p></li>
-<li><p>Go to File <strong><span style="color: IndianRed"> -&gt; </span></strong> Export…</p></li>
-<li><p>Change the following options</p>
-<p><strong>Unicode</strong>: Uncheck</p></li>
-<li><p>Select <strong>Okay</strong></p></li>
-<li><p><strong>Save</strong> with the same file name and location as the E-Merge file</p>
-<p><strong>Data Files / <span style="color: IndianRed">Merged</span></strong></p>
-<p>If there is already an exported .txt file for this task then overwrite it.</p></li>
-<li><p><strong>Repeat</strong> steps 2 - 6 for each task</p></li>
+<li><p>Connect the computer to the <strong>internet</strong></p>
+<p>Do this by plugging in the yellow ethernet cord</p></li>
+<li><p>Connect to the <strong>Z Drive</strong></p>
+<p>There should be a shortcut to a Z: Drive folder on the Desktop. If you can open that shortcut then the Z Drive is connected. Otherwise it might prompt you to provide credentials. A Grad Student or Post-Doc will have to put in their GT username and password.</p></li>
+<li><p><strong>Open R</strong></p></li>
+<li><p>In R, <strong>open copy_raw.R</strong> script file</p></li>
+<li><p><strong>Run all code</strong> in copy_raw.R</p>
+<p>Use CTRL+A to select all lines, then CTRL+R to run</p></li>
+<li><p>In R, <strong>open copy_to_zdrive.R</strong> script file</p></li>
+<li><p><strong>Run all code</strong> in copy_to_zdrive.R</p>
+<p>Use CTRL+A to select all lines, then CTRL+R to run</p></li>
+<li><p><strong>Check</strong> the output to see the number of files copied for each task</p></li>
+<li><p><strong>Unplug</strong> the computer from the <strong>internet</strong></p></li>
+<li><p><strong>Repeat</strong> steps 1 - 9 for each running room computer</p></li>
 </ol>
 
 </div>
@@ -119,8 +125,8 @@
           </div>
         </div>
       </div>
-<a href="merge.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="tidy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="merge.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

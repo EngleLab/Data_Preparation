@@ -4,6 +4,10 @@ author: "Jason Tsukahara"
 bibliography:
 - book.bib
 - packages.bib
+output:
+  html_document:
+    toc: true
+    toc_depth: 1
 description: This is a useR Guide for the EngleLab
 documentclass: book
 link-citations: yes
@@ -14,31 +18,27 @@ github-repo: "EngleLab"
 
 # Introduction {-}
 
-At some point you will need to start analyzing the data. However, you first need to prepare the data so that it is ready to analyze. There are several steps in this processs and it can be quite tedious.
+This is a guide on how to perform the data preparation steps. **There are four chapters** covering each of the steps and an additional chapter for pupil/eye-tracking data.
 
-There are two scenarios in which you may need to start processing and analyzing data:
+*Navigate the Chapters from the left-sidebar.*
 
-- Before data collection has finished
+Before we can start even looking at the data there are some preparatory steps that need to happen. Data Preparation starts out with *messy* raw data files for each individual subject spread across all the computers and ends with *tidy* raw data files (that are easy to work with) with data from all subjects merged into one file for each task.
 
-- After data collection has finished
+The four data preparation steps are:
 
-<br>
-
-For both of these scenarios, there are **4 data preparation steps:**
-
-1. **Organize the raw data files**. This involves moving the raw *.edat* files from *Tasks/Session #/#. Task/data* to *Data Files/edat/Task/*.
+1. **Organize** the raw data files
 
 2. **Merge** the individual *.edat* files into a single **task.emrg** file using *E-Merge*
 
-3. **Export** the **task.emrg** file to a **task.txt** file so we can process the data in **R**
+3. **Export** the task.emrg file to a **task.txt** file so we can process the data in **R**
 
-4. **Source** the **0_task_raw.R** *Scripts* 
+4. **Tidy** the raw data files by running the **0_task_raw.R** *Scripts* 
 
 ----
 
-All the data files related to the study will be in the **Data Collection** folder at:
+All the data files related to the study will be in the **Z Drive** at:
 
-**Dropbox (GaTech) / EngleLab / Studies / [StudyName] **
+**Z: Backup Data / [StudyName] / Data Files / **
 
 
 

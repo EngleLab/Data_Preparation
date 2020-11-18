@@ -1,96 +1,40 @@
-# Organize Raw Files
+# Organize
+
+The first step in data preparation is simply about organizing the raw data files so that we can more easily merge the data files using E-Merge.
+
+Initially the data files are stored on separate computers along with the task program and stimulus materials. For each task we need to grab only the data files from each computer and put them into a single folder for that task.
+
+**Because we have many tasks and computers, manually doing this can be quite tedious and error prone.**
+
+I have created R scripts that you can run on each running room computer to copy the data files for each task to the Z drive.
 
 ----
 
-The Four Data Preparation Steps
+1. Connect the computer to the **internet**
 
-1. **Organize the raw data files**. This involves moving the raw *.edat* files from *Tasks/Session #/#. Task/data* to *Data Files/edat/Task/*.
+    Do this by plugging in the yellow ethernet cord
 
-2. **Merge** the individual *.edat* files into a single **task.emrg** file using *E-Merge*
+2. Connect to the **Z Drive**
 
-3. **Export** the **task.emrg** file to a **task.txt** file so we can process the data in **R**
+    There should be a shortcut to a Z: Drive folder on the Desktop. If you can open that shortcut then the Z Drive is connected. Otherwise it might prompt you to provide credentials. A Grad Student or Post-Doc will have to put in their GT username and password.
 
-4. **Source** the **0_task_raw.R** *Scripts* 
+3. **Open R**
 
-----
+4. In R, **open copy_raw.R** script file
 
-The first step in data preparation is just about organizing the raw data files so that we can more easily merge the data files using E-Merge.
+5. **Run all code** in copy_raw.R
 
-This document shows you how to perform step 1 using a convenient function in R (instead of doing it manually)
+    Use CTRL+A to select all lines, then CTRL+R to run
 
-To perform this first step, you can use the `copy_raw()` function from the `workflow` package I developed.
+6. In R, **open copy_to_zdrive.R** script file
 
-## Steps: Before Finishing Data Collection
+7. **Run all code** in copy_to_zdrive.R
 
-In situations where data collection has not finished, you do not need to worry about removing subjects that did not complete all sessions. And this organization is more temporary so we will want to just copy/paste the files, not remove them.
-
-1. Open the research study's RProject file (**.Rproj**) located at:
-
-    **Dropbox (GaTech) / EngleLab / Studies / [StudyName] / [StudyName].Rproj**
-
-    Do not open RStudio by clicking on the Program Application in the taskbar
+    Use CTRL+A to select all lines, then CTRL+R to run
     
-2. Copy and Paste the line of code into the Console window
+8. **Check** the output to see the number of files copied for each task
 
-```{r eval = FALSE}
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/subj", 
-                   filetype = ".edat")
-```
+9. **Unplug** the computer from the **internet**
 
-3. Repeat Step 2 for each Session folder changing it from Session 1 to Session 2, etc.
-
-4. If there is eye-tracking data copy and paste the three lines of code into the Console window
-
-```{r eval = FALSE}
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking", 
-                   filetype = ".idf", ext = "idf")
-
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking",
-                   filetype = "AccuracyImage", ext = "idf")
-
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking",
-                   filetype = "TrackingMonitorImage", ext = "idf")
-```
-
-5. Repeat Step 4 for each Sessin folder. Changing it from Session 1 to Session 2, etc.
-
-----
-
-## Steps: After Data Collection Has Finished
-
-In situations where data collection has finished, you will need to separate files for subjects that did complete all Sessions and subjects that did not.
-
-1. We need to create a certain file before we use `workflow::copy_raw()`. This file only contains a column of **Subject #'s** that completed all sessions. I suggest creating this file based on the **Database** on the Control Room Computer. Put the Subject #'s in an Excel document and save it as a comma separated value file, **subjlist_final.csv** to **Data Files/**
-
-2. Open the research study's RProject file (**.Rproj**)
-
-    Do not open RStudio by clicking on the Program Application
-    
-3. Copy and Paste the line of code into the Console window
-
-```{r eval = FALSE}
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/subj", 
-                   filetype = ".edat", remove = TRUE, 
-                   subj.file = "Data Files/subjlist_final.csv")
-```
-
-4. Repeat Step 2 for each Session folder changing it from Session 1 to Session 2, etc.
-
-5. If there is eye-tracking data copy and paste the three lines of code into the Console window
-
-```{r eval = FALSE}
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking", 
-                   filetype = ".idf", ext = "idf", remove = TRUE, 
-                   subj.file = "Data Files/subjlist_final.csv")
-
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking",
-                   filetype = "AccuracyImage", ext = "idf", remove = TRUE, 
-                   subj.file = "Data Files/subjlist_final.csv")
-
-workflow::copy_raw(from = "Tasks/Session 1", to = "Data Files/Eye-Tracking",
-                   filetype = "TrackingMonitorImage", ext = "idf", remove = TRUE, 
-                   subj.file = "Data Files/subjlist_final.csv")
-```
-
-6. Repeat Step 4 for each Sessin folder. Changing it from Session 1 to Session 2, etc.
+10. **Repeat** steps 1 - 9 for each running room computer
 

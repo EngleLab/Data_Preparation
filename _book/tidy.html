@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Export | EngleLab: Data Preparation</title>
+  <title>4 Tidy | EngleLab: Data Preparation</title>
   <meta name="description" content="This is a useR Guide for the EngleLab" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Export | EngleLab: Data Preparation" />
+  <meta property="og:title" content="4 Tidy | EngleLab: Data Preparation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="EngleLab" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Export | EngleLab: Data Preparation" />
+  <meta name="twitter:title" content="4 Tidy | EngleLab: Data Preparation" />
   
   <meta name="twitter:description" content="This is a useR Guide for the EngleLab" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="merge.html"/>
-<link rel="next" href="tidy.html"/>
+<link rel="prev" href="export.html"/>
+<link rel="next" href="pupil-data.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -95,23 +95,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="export" class="section level1">
-<h1><span class="header-section-number">3</span> Export</h1>
-<p>The third step in the data preparation stage is to <strong>Export</strong> the <strong>.emrg</strong> to a <strong>.txt</strong> file so it can be imported into R.</p>
-<p>Before we can do so we will need to copy the E-Prime merged files from the Z: drive over to SharePoint. <em>This is only because exporting the files takes considerably longer on the Z: drive than SharePoint</em>.</p>
+<div id="tidy" class="section level1">
+<h1><span class="header-section-number">4</span> Tidy</h1>
+<p>The final data preparation step is to <strong>tidy</strong> the raw data files by sourcing the <strong>0_task_raw.R</strong> scripts. These scripts convert the messy <strong>task.txt</strong> files to tidy <strong>task_raw.csv</strong> files.</p>
+<p>A masterscript for this step should be created already, if not then get a graduate student to help out (Jason Tsukahara)</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Copy</strong> all the E-Prime Merged data files over to SharePoint:</p>
-<p>Georgia Institute of Technology / Engle Lab - Documents / Data Collection / [Study Name] / <strong>Data Files / Raw Data / <span style="color: IndianRed">Merged</span></strong></p></li>
-<li><p><strong>Open</strong> an E-Merged data file</p></li>
-<li><p>Go to File <strong><span style="color: IndianRed"> -&gt; </span></strong> Export…</p></li>
-<li><p>Change the following options</p>
-<p><strong>Unicode</strong>: Uncheck</p></li>
-<li><p>Select <strong>Okay</strong></p></li>
-<li><p><strong>Save</strong> with the same file name and location as the E-Merge file</p>
-<p><strong>Data Files / <span style="color: IndianRed">Merged</span></strong></p>
-<p>If there is already an exported .txt file for this task then overwrite it.</p></li>
-<li><p><strong>Repeat</strong> steps 2 - 6 for each task</p></li>
+<li><p><strong>Open</strong> the research study’s RProject file (<strong>.Rproj</strong>) located at:</p>
+<p>Georgia Institute of Technology / Engle Lab - Documents / <strong>Data Collection / [Study Name] / [StudyName].Rproj</strong></p>
+<p><em>Do not open RStudio by clicking on the Program Application in the taskbar</em></p></li>
+<li><p>Open the file <strong>masterscript.R</strong></p>
+<p><em>Use the File Window pane in RStudio (in the bottom right corner to open script files)</em></p></li>
+<li><p><strong>Run</strong> the lines of code in the masterscript that start with <code>source()</code> by clicking anywhere on the first line of code and press <strong>Ctrl+Enter</strong></p></li>
+<li><p><strong>Make sure no error messages occur</strong> (these will be printed in the console window). Warning messages are okay.</p></li>
+<li><p><strong>Repeat</strong> Steps 3 and 4 for each <code>source()</code> line of code.</p></li>
 </ol>
+<p>There should now be a <strong>_raw.csv</strong> file for each task located in the <strong>Data Files</strong> folder</p>
 
 </div>
             </section>
@@ -119,8 +117,8 @@
           </div>
         </div>
       </div>
-<a href="merge.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="tidy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="export.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pupil-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -12,15 +12,11 @@ The eyetracker will create several data files that we need to import into BeGaze
 
 - **.idf_images** - These files will look like folders. *We do not need to import these files*
 
-
-
 These files are located in the directory: **Data Files/Eye-Tracking/[Task Name]/<span style="color: IndianRed">idf</span>**
 
 We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span style="color: IndianRed">[Task Name]</span>**
 
-## Using BeGaze
-
-1. Open data files in BeGaze
+1. **Open** data files in BeGaze
 
     - File **<span style="color: IndianRed"> -> </span>** Manual Experiment Creation
     
@@ -64,7 +60,7 @@ We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span styl
 
 <br>
     
-2. Convert .idf files to .txt files
+2. **Convert** .idf files to .txt files
 
     - Export **<span style="color: IndianRed"> -> </span>** Legacy: Export Raw Data to File...
     
@@ -124,5 +120,5 @@ We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span styl
     
     - **Delete** PupilData Experiment
     
-
+3. **Repeat** steps 1 - 2 for each eye-tracking task
 
