@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Pupil Data | EngleLab: Data Preparation</title>
   <meta name="description" content="This is a useR Guide for the EngleLab" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21.4 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Pupil Data | EngleLab: Data Preparation" />
   <meta property="og:type" content="book" />
@@ -50,6 +50,8 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -105,26 +107,26 @@
 <li><p><strong>TrackingMonitorImage.bmp</strong> - An image file</p></li>
 <li><p><strong>.idf_images</strong> - These files will look like folders. <em>We do not need to import these files</em></p></li>
 </ul>
-<p>These files are located in the directory: <strong>Data Files/Eye-Tracking/[Task Name]/<span style="color: IndianRed">idf</span></strong></p>
-<p>We will export the raw sample.txt files to: <strong>Data Files/Eye-Tracking/<span style="color: IndianRed">[Task Name]</span></strong></p>
+<p>These files are located in the directory: <strong>Data Files/Eye-Tracking/[Task Name]/<span style="color: FireBrick">idf</span></strong></p>
+<p>We will export the raw sample.txt files to: <strong>Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span></strong></p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Open</strong> data files in BeGaze</p>
 <ul>
-<li><p>File <strong><span style="color: IndianRed"> -&gt; </span></strong> Manual Experiment Creation</p></li>
+<li><p>File <strong><span style="color: FireBrick"> -&gt; </span></strong> Manual Experiment Creation</p></li>
 <li><p>Experiment Name: <strong>PupilData</strong></p></li>
 <li><p>Go to the <strong>Gaze Data</strong> tab:</p>
 <ul>
-<li><p>Add files… <strong><span style="color: IndianRed"> -&gt; </span></strong> Sort by Data <strong><span style="color: IndianRed"> -&gt; </span></strong> select the <strong><span style="color: IndianRed"> .idf files </span></strong> you want (not .idf_images) <strong><span style="color: IndianRed"> -&gt; </span></strong> Open</p></li>
+<li><p>Add files… <strong><span style="color: FireBrick"> -&gt; </span></strong> Sort by Data <strong><span style="color: FireBrick"> -&gt; </span></strong> select the <strong><span style="color: FireBrick"> .idf files </span></strong> you want (not .idf_images) <strong><span style="color: FireBrick"> -&gt; </span></strong> Open</p></li>
 <li><p>Check if any subject files have a different recording frequency (Hz) or different calibration screen resolution (e.g. [860,720])</p></li>
 </ul>
 <p>-Select those subject files and click “Remove Files”</p>
 <ul>
-<li><p>On the computer in the <strong>idf</strong> folder, move all the files associated with those subjects to a “recording error” folder: <strong>Data Files/Eye-Tracking/[Task Name]/idf/<span style="color: IndianRed">recording error</span></strong></p></li>
+<li><p>On the computer in the <strong>idf</strong> folder, move all the files associated with those subjects to a “recording error” folder: <strong>Data Files/Eye-Tracking/[Task Name]/idf/<span style="color: FireBrick">recording error</span></strong></p></li>
 <li><p>Check that all subjects have the same recording frequency (Hz) and calibration screen resolution.</p></li>
 </ul></li>
 <li><p>Go to <strong>Stimulus Images</strong> tab:</p>
 <ul>
-<li>Add Files… <strong><span style="color: IndianRed"> -&gt; </span></strong> Sort by Date <strong><span style="color: IndianRed"> -&gt; </span></strong> select the <strong><span style="color: IndianRed"> AccuracyImage.bmp </span></strong> and <strong><span style="color: IndianRed"> TrackingMonitorIMage.bmp </span></strong> files you want (not .idf_images)</li>
+<li>Add Files… <strong><span style="color: FireBrick"> -&gt; </span></strong> Sort by Date <strong><span style="color: FireBrick"> -&gt; </span></strong> select the <strong><span style="color: FireBrick"> AccuracyImage.bmp </span></strong> and <strong><span style="color: FireBrick"> TrackingMonitorIMage.bmp </span></strong> files you want (not .idf_images)</li>
 </ul></li>
 <li><p>Go to <strong>Event Detection</strong> tab:</p>
 <ul>
@@ -145,7 +147,7 @@
 <ol start="2" style="list-style-type: decimal">
 <li><p><strong>Convert</strong> .idf files to .txt files</p>
 <ul>
-<li><p>Export <strong><span style="color: IndianRed"> -&gt; </span></strong> Legacy: Export Raw Data to File…</p></li>
+<li><p>Export <strong><span style="color: FireBrick"> -&gt; </span></strong> Legacy: Export Raw Data to File…</p></li>
 <li><p>The following fields should be selected (Fields with an <strong>*</strong> are the most important)</p>
 <p><strong>Raw Data</strong>:</p>
 <ul>
@@ -176,15 +178,15 @@
 <li><p>Select <strong>Write header</strong></p></li>
 <li><p>Decimal places: <strong>4</strong></p></li>
 <li><p>Separator: <strong>Tab</strong></p></li>
-<li><p>Export Location: <strong><span style="color: IndianRed"> NEEDS TO BE SPECIFIED!! </span></strong></p>
+<li><p>Export Location: <strong><span style="color: FireBrick"> NEEDS TO BE SPECIFIED!! </span></strong></p>
 <ul>
-<li>Browse: <strong>Data Files/Eye-Tracking/<span style="color: IndianRed">[Task Name]</span></strong></li>
+<li>Browse: <strong>Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span></strong></li>
 </ul></li>
 <li><p>Select <strong>Single file output</strong></p></li>
 </ul></li>
 <li><p>Select <strong>Export</strong></p></li>
-<li><p>Go to File <strong><span style="color: IndianRed"> -&gt; </span></strong> <strong>Close Experiment</strong></p></li>
-<li><p>Got to File <strong><span style="color: IndianRed"> -&gt; </span></strong> <strong>Delete Experiment from Data Base</strong></p></li>
+<li><p>Go to File <strong><span style="color: FireBrick"> -&gt; </span></strong> <strong>Close Experiment</strong></p></li>
+<li><p>Got to File <strong><span style="color: FireBrick"> -&gt; </span></strong> <strong>Delete Experiment from Data Base</strong></p></li>
 <li><p><strong>Delete</strong> PupilData Experiment</p></li>
 </ul></li>
 <li><p><strong>Repeat</strong> steps 1 - 2 for each eye-tracking task</p></li>
