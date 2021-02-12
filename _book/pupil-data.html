@@ -32,6 +32,7 @@
   
 <link rel="prev" href="tidy.html"/>
 
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,7 +50,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
@@ -76,7 +76,11 @@
 <li class="chapter" data-level="2" data-path="merge.html"><a href="merge.html"><i class="fa fa-check"></i><b>2</b> Merge</a></li>
 <li class="chapter" data-level="3" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>3</b> Export</a></li>
 <li class="chapter" data-level="4" data-path="tidy.html"><a href="tidy.html"><i class="fa fa-check"></i><b>4</b> Tidy</a></li>
-<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a></li>
+<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pupil-data.html"><a href="pupil-data.html#copy-from-z-drive-to-the-yellow-hard-drive"><i class="fa fa-check"></i><b>5.1</b> Copy from Z Drive to the Yellow Hard Drive</a></li>
+<li class="chapter" data-level="5.2" data-path="pupil-data.html"><a href="pupil-data.html#begaze"><i class="fa fa-check"></i><b>5.2</b> BeGaze</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://englelab.gatech.edu/labuser" target="blank">Lab User</a></li>
 
@@ -97,9 +101,9 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pupil-data" class="section level1">
+<div id="pupil-data" class="section level1" number="5">
 <h1><span class="header-section-number">5</span> Pupil Data</h1>
-<p>There are a few extra <strong>Data Preparation</strong> steps required for pupil data. After completing Step 1 of data preparation follow these instructions. These instructions replace Steps 2 and 3.</p>
+<p>There are a few extra <strong>Data Preparation</strong> steps required for pupil data.</p>
 <p>The eyetracker will create several data files that we need to import into BeGaze analysis software and export as a .txt file. The following data files are created by the eyetracker</p>
 <ul>
 <li><p><strong>.idf</strong> - this file contains the actual gaze and pupil data</p></li>
@@ -107,8 +111,17 @@
 <li><p><strong>TrackingMonitorImage.bmp</strong> - An image file</p></li>
 <li><p><strong>.idf_images</strong> - These files will look like folders. <em>We do not need to import these files</em></p></li>
 </ul>
-<p>These files are located in the directory: <strong>Data Files/Eye-Tracking/[Task Name]/<span style="color: FireBrick">idf</span></strong></p>
-<p>We will export the raw sample.txt files to: <strong>Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span></strong></p>
+<p>In Step 1 of Data Preparation these files were added to the Z Drive: <strong>Z:/Backup Data/[STUDY NAME]/Subject Files/[Task Name]/<span style="color: FireBrick">idf</span></strong></p>
+<div id="copy-from-z-drive-to-the-yellow-hard-drive" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Copy from Z Drive to the Yellow Hard Drive</h2>
+<ol style="list-style-type: decimal">
+<li><p>Copy the files from the Z Drive to the Yellow Hard Drive</p>
+<p><strong>Z:/Backup Data/[STUDY NAME]/Subject Files/[Task Name]/<span style="color: FireBrick">idf</span></strong></p>
+<p><strong>PupilBackup (G:)/[STUDY NAME]/[Task Name]/<span style="color: FireBrick">idf</span></strong></p></li>
+</ol>
+</div>
+<div id="begaze" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> BeGaze</h2>
 <ol style="list-style-type: decimal">
 <li><p><strong>Open</strong> data files in BeGaze</p>
 <ul>
@@ -116,12 +129,13 @@
 <li><p>Experiment Name: <strong>PupilData</strong></p></li>
 <li><p>Go to the <strong>Gaze Data</strong> tab:</p>
 <ul>
-<li><p>Add files… <strong><span style="color: FireBrick"> -&gt; </span></strong> Sort by Data <strong><span style="color: FireBrick"> -&gt; </span></strong> select the <strong><span style="color: FireBrick"> .idf files </span></strong> you want (not .idf_images) <strong><span style="color: FireBrick"> -&gt; </span></strong> Open</p></li>
+<li><p>Navigate to <strong>PupilBackup (G:)/[STUDY NAME]/[Task Name]/<span style="color: FireBrick">idf</span></strong></p></li>
+<li><p>Sort by Data <strong><span style="color: FireBrick"> -&gt; </span></strong> select the <strong><span style="color: FireBrick"> .idf files </span></strong> you want (not .idf_images) <strong><span style="color: FireBrick"> -&gt; </span></strong> Open</p></li>
 <li><p>Check if any subject files have a different recording frequency (Hz) or different calibration screen resolution (e.g. [860,720])</p></li>
 </ul>
 <p>-Select those subject files and click “Remove Files”</p>
 <ul>
-<li><p>On the computer in the <strong>idf</strong> folder, move all the files associated with those subjects to a “recording error” folder: <strong>Data Files/Eye-Tracking/[Task Name]/idf/<span style="color: FireBrick">recording error</span></strong></p></li>
+<li><p>On the computer in the <strong>idf</strong> folder, move all the files associated with those subjects to a “recording error” folder: <strong>PupilBackup (G:)/[STUDY NAME]/[Task Name]/idf/<span style="color: FireBrick">recording error</span></strong></p></li>
 <li><p>Check that all subjects have the same recording frequency (Hz) and calibration screen resolution.</p></li>
 </ul></li>
 <li><p>Go to <strong>Stimulus Images</strong> tab:</p>
@@ -180,7 +194,7 @@
 <li><p>Separator: <strong>Tab</strong></p></li>
 <li><p>Export Location: <strong><span style="color: FireBrick"> NEEDS TO BE SPECIFIED!! </span></strong></p>
 <ul>
-<li>Browse: <strong>Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span></strong></li>
+<li>Browse: <strong>PupilBackup (G:)/[STUDY NAME]/<span style="color: FireBrick">[Task Name]</span></strong></li>
 </ul></li>
 <li><p>Select <strong>Single file output</strong></p></li>
 </ul></li>
@@ -192,6 +206,7 @@
 <li><p><strong>Repeat</strong> steps 1 - 2 for each eye-tracking task</p></li>
 </ol>
 
+</div>
 </div>
             </section>
 

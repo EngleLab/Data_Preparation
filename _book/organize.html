@@ -32,6 +32,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="merge.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,7 +50,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
@@ -76,7 +76,11 @@
 <li class="chapter" data-level="2" data-path="merge.html"><a href="merge.html"><i class="fa fa-check"></i><b>2</b> Merge</a></li>
 <li class="chapter" data-level="3" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>3</b> Export</a></li>
 <li class="chapter" data-level="4" data-path="tidy.html"><a href="tidy.html"><i class="fa fa-check"></i><b>4</b> Tidy</a></li>
-<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a></li>
+<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pupil-data.html"><a href="pupil-data.html#copy-from-z-drive-to-the-yellow-hard-drive"><i class="fa fa-check"></i><b>5.1</b> Copy from Z Drive to the Yellow Hard Drive</a></li>
+<li class="chapter" data-level="5.2" data-path="pupil-data.html"><a href="pupil-data.html#begaze"><i class="fa fa-check"></i><b>5.2</b> BeGaze</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://englelab.gatech.edu/labuser" target="blank">Lab User</a></li>
 
@@ -97,7 +101,7 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="organize" class="section level1">
+<div id="organize" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Organize</h1>
 <p>The first step in data preparation is simply about organizing the raw data files so that we can more easily merge the data files using E-Merge.</p>
 <p>Initially the data files are stored on separate computers along with the task program and stimulus materials. For each task we need to grab only the data files from each computer and put them into a single folder for that task.</p>
@@ -107,9 +111,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Connect the computer to the <strong>internet</strong></p>
 <p>Do this by plugging in the yellow ethernet cord</p></li>
-<li><p>Connect to the <strong>Z Drive</strong></p>
-<p>There should be a shortcut to a Z: Drive folder on the Desktop. If you can open that shortcut then the Z Drive is connected. Otherwise it might prompt you to provide credentials. A Grad Student or Post-Doc will have to put in their GT username and password.</p></li>
-<li><p><strong>Run</strong> the R script. In the study folder on the Desktop there should be an R script file (copy_to_zdrive.R). Run the file by double-clicking on it.</p>
+<li><p><strong>Run</strong> the R script <strong>copy_to_zdrive</strong> located on the desktop by double-clicking on it.</p>
 <p>A command prompt window should open up and you should see the output of the script being printed. When the R script is finished running (it may take a while especially for eye-tracking data) the command prompt window will close.</p></li>
 <li><p><strong>Unplug</strong> the computer from the internet</p></li>
 <li><p><strong>Repeat</strong> steps 1-4 for each running room computer.</p></li>

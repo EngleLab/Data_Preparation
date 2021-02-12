@@ -32,6 +32,7 @@
   
 <link rel="prev" href="organize.html"/>
 <link rel="next" href="export.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,7 +50,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
@@ -76,7 +76,11 @@
 <li class="chapter" data-level="2" data-path="merge.html"><a href="merge.html"><i class="fa fa-check"></i><b>2</b> Merge</a></li>
 <li class="chapter" data-level="3" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>3</b> Export</a></li>
 <li class="chapter" data-level="4" data-path="tidy.html"><a href="tidy.html"><i class="fa fa-check"></i><b>4</b> Tidy</a></li>
-<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a></li>
+<li class="chapter" data-level="5" data-path="pupil-data.html"><a href="pupil-data.html"><i class="fa fa-check"></i><b>5</b> Pupil Data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pupil-data.html"><a href="pupil-data.html#copy-from-z-drive-to-the-yellow-hard-drive"><i class="fa fa-check"></i><b>5.1</b> Copy from Z Drive to the Yellow Hard Drive</a></li>
+<li class="chapter" data-level="5.2" data-path="pupil-data.html"><a href="pupil-data.html#begaze"><i class="fa fa-check"></i><b>5.2</b> BeGaze</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://englelab.gatech.edu/labuser" target="blank">Lab User</a></li>
 
@@ -97,31 +101,31 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="merge" class="section level1">
+<div id="merge" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Merge</h1>
 <p>The second step in data preparation is to merge the individual <strong>.edat</strong> files into a single <strong>.emrg</strong> file.</p>
-<p>The individual subject data files are located on the Z Drive: <strong>Z:/Backup Data/[STUDY NAME]/Data Files/Subject Files/<span style="color: FireBrick">[Task Name]</span></strong></p>
-<p>You need to save the merged data files on the Z Drive at: <strong>Data Files/<span style="color: FireBrick">Merged</span></strong></p>
+<p>The individual subject data files are located on the Z Drive: <strong>Z:/Backup Data/[STUDY NAME]/Subject Files/<span style="color: FireBrick">[Task Name]</span></strong></p>
+<p>You need to save the merged data files on the Z Drive at: <strong>Z:/Backup Data/[STUDY NAME]/<span style="color: FireBrick">Merged</span></strong></p>
 <hr />
 <ol style="list-style-type: decimal">
 <li><p>Open <strong>E-Merge 3.0</strong> by clicking on the icon in the taskbar.</p></li>
 <li><p>In the left window pane, <strong>navigate to the directory</strong>:</p>
-<p>Z: Backup Data / [StudyName] / <strong>Data Files / Subject Files</strong></p></li>
+<p>Z: Backup Data / [StudyName] / <strong>Subject Files</strong></p></li>
 <li><p>Click on the <strong><span style="color: FireBrick">[Task Name]</span></strong> folder. This should populate the right window pane with <strong>.edat</strong> files</p></li>
 <li><p><strong>Select all the files</strong> (Ctrl + A)</p></li>
 <li><p>Click on <strong>Merge</strong> in the toolbar above</p></li>
 <li><p>Select <strong>Standard Merge</strong></p></li>
 <li><p>A finder window will pop up asking you <strong>Save</strong> the merged data file</p>
 <p>Save the new merged data file with the same name as the <strong><span style="color: FireBrick">[Task Name]</span></strong> folder. <strong>Save it to</strong>:</p>
-<p>Z: Backup Data / [StudyName] / <strong>Data Files / <span style="color: FireBrick">Merged</span></strong></p>
-<p>If there is no merged file for this task yet, it will ask you if you want to create this file. Select “Yes”.</p></li>
+<p>Z: Backup Data / [StudyName] / <strong><span style="color: FireBrick">Merged</span></strong></p>
+<p>If there is no merged file for this task yet, it will ask you if you want to create this file. Select “Yes.”</p></li>
 <li><p>Get a Graduate Student or PostDoc if an <strong>error</strong> message occurs</p></li>
 <li><p><strong>Repeat</strong> steps 3 - 9 for each task folder</p>
 <ul>
 <li>The directory tree in the left window pane may have disappeared. To make it reappear, adjust the horizontal size of the window panes by moving your mouse cursor to the divider between the left and right window panes.</li>
 </ul></li>
 </ol>
-<p><strong>You should now see E-Merged files for each task located in Data Files / <span style="color: FireBrick">Merged</span>.</strong></p>
+<p><strong>You should now see E-Merged files for each task located in Z:/Backup Data/[STUDY NAME]/ <span style="color: FireBrick">Merged</span>.</strong></p>
 
 </div>
             </section>

@@ -3,3 +3,5 @@ merge
 export
 tidy
 pupil-data
+copy-from-z-drive-to-the-yellow-hard-drive
+begaze
