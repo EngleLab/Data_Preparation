@@ -2,9 +2,9 @@
 
 The second step in data preparation is to merge the individual **.edat** files into a single **.emrg** file.
 
-The individual subject data files are located on the Z Drive: **Z:/Backup Data/[STUDY NAME]/Data Files/Subject Files/<span style="color: FireBrick">[Task Name]</span>**
+The individual subject data files are located on the Z Drive: **Z:/Backup Data/[STUDY NAME]/Subject Files/<span style="color: FireBrick">[Task Name]</span>**
 
-You need to save the merged data files on the Z Drive at: **Data Files/<span style="color: FireBrick">Merged</span>**
+You need to save the merged data files on the Z Drive at: **Z:/Backup Data/[STUDY NAME]/<span style="color: FireBrick">Merged</span>**
 
 ----
 
@@ -12,7 +12,7 @@ You need to save the merged data files on the Z Drive at: **Data Files/<span sty
 
 2. In the left window pane, **navigate to the directory**: 
 
-    Z: Backup Data / [StudyName] / **Data Files / Subject Files**
+    Z: Backup Data / [StudyName] / **Subject Files**
     
 3. Click on the **<span style="color: FireBrick">[Task Name]</span>** folder. This should populate the right window pane with **.edat** files
 
@@ -26,7 +26,7 @@ You need to save the merged data files on the Z Drive at: **Data Files/<span sty
 
     Save the new merged data file with the same name as the **<span style="color: FireBrick">[Task Name]</span>** folder. **Save it to**: 
 
-    Z: Backup Data / [StudyName] / **Data Files / <span style="color: FireBrick">Merged</span>**
+    Z: Backup Data / [StudyName] / **<span style="color: FireBrick">Merged</span>**
     
     If there is no merged file for this task yet, it will ask you if you want to create this file. Select "Yes".
     
@@ -36,5 +36,5 @@ You need to save the merged data files on the Z Drive at: **Data Files/<span sty
 
     - The directory tree in the left window pane may have disappeared. To make it reappear, adjust the horizontal size of the window panes by moving your mouse cursor to the divider between the left and right window panes.
 
-**You should now see E-Merged files for each task located in Data Files / <span style="color: FireBrick">Merged</span>.**
+**You should now see E-Merged files for each task located in Z:/Backup Data/[STUDY NAME]/ <span style="color: FireBrick">Merged</span>.**
 

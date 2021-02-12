@@ -1,6 +1,6 @@
 # Pupil Data
 
-There are a few extra **Data Preparation** steps required for pupil data. After completing Step 1 of data preparation follow these instructions. These instructions replace Steps 2 and 3.
+There are a few extra **Data Preparation** steps required for pupil data.
 
 The eyetracker will create several data files that we need to import into BeGaze analysis software and export as a .txt file. The following data files are created by the eyetracker 
 
@@ -12,9 +12,17 @@ The eyetracker will create several data files that we need to import into BeGaze
 
 - **.idf_images** - These files will look like folders. *We do not need to import these files*
 
-These files are located in the directory: **Data Files/Eye-Tracking/[Task Name]/<span style="color: FireBrick">idf</span>**
+In Step 1 of Data Preparation these files were added to the Z Drive: **Z:/Backup Data/[STUDY NAME]/Subject Files/[Task Name]/<span style="color: FireBrick">idf</span>**
 
-We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span>**
+## Copy from Z Drive to the Yellow Hard Drive
+
+1. Copy the files from the Z Drive to the Yellow Hard Drive
+
+    **Z:/Backup Data/[STUDY NAME]/Subject Files/[Task Name]/<span style="color: FireBrick">idf</span>**
+    
+    **PupilBackup (G:)/[STUDY NAME]/[Task Name]/<span style="color: FireBrick">idf</span>**
+
+## BeGaze
 
 1. **Open** data files in BeGaze
 
@@ -24,13 +32,15 @@ We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span styl
     
     - Go to the **Gaze Data** tab:
     
-        - Add files… **<span style="color: FireBrick"> -> </span>** Sort by Data **<span style="color: FireBrick"> -> </span>** select the **<span style="color: FireBrick"> .idf files </span>** you want (not .idf_images) **<span style="color: FireBrick"> -> </span>** Open
+        - Navigate to **PupilBackup (G:)/[STUDY NAME]/[Task Name]/<span style="color: FireBrick">idf</span>**
+    
+        - Sort by Data **<span style="color: FireBrick"> -> </span>** select the **<span style="color: FireBrick"> .idf files </span>** you want (not .idf_images) **<span style="color: FireBrick"> -> </span>** Open
         
         - Check if any subject files have a different recording frequency (Hz) or different calibration screen resolution (e.g. [860,720])
         
         -Select those subject files and click “Remove Files”
         
-        - On the computer in the **idf** folder, move all the files associated with those subjects to a “recording error” folder: **Data Files/Eye-Tracking/[Task Name]/idf/<span style="color: FireBrick">recording error</span>** 
+        - On the computer in the **idf** folder, move all the files associated with those subjects to a “recording error” folder: **PupilBackup (G:)/[STUDY NAME]/[Task Name]/idf/<span style="color: FireBrick">recording error</span>** 
         
         - Check that all subjects have the same recording frequency (Hz) and calibration screen resolution.
 
@@ -108,7 +118,7 @@ We will export the raw sample.txt files to: **Data Files/Eye-Tracking/<span styl
         
         - Export Location:  **<span style="color: FireBrick"> NEEDS TO BE SPECIFIED!! </span>**
         
-            - Browse: **Data Files/Eye-Tracking/<span style="color: FireBrick">[Task Name]</span>**
+            - Browse: **PupilBackup (G:)/[STUDY NAME]/<span style="color: FireBrick">[Task Name]</span>**
             
         - Select **Single file output**
         
